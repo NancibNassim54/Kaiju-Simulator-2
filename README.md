@@ -30,4 +30,4 @@ List what is needed to run the game (e.g., Unity Editor version or runtime requi
 ### Installation
 1. Clone the repository:
    ```bash
-   git clone [https://github.com/VladimirPutinDu54/Kaiju-Simulator-2.git](https://github.com/VladimirPutinDu54/Kaiju-Simulator-2.git)
+   git clone [https://github.com/NancibNassim54/Kaiju-Simulator-2.git](https://github.com/NancibNassim54/Kaiju-Simulator-2.git)
