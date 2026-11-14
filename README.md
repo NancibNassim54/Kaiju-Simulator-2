@@ -20,7 +20,7 @@
 * **Intense Atmosphere:** Dynamic visual and audio feedback emphasizing your sheer size and power.
 
 ## 🛠️ Built With
-* *[Mention your engine/technologies here, e.g., Unity / Godot / C# / Python]*
+* **GBStudio
 
 ## 🚀 Getting Started
 
