@@ -1,0 +1,42 @@
+{
+  "_resourceType": "script",
+  "id": "47bd315e-7efc-4ba0-b170-d1042d342843",
+  "name": "Script 4",
+  "description": "",
+  "variables": {
+    "V0": {
+      "id": "V0",
+      "name": "Variable A",
+      "passByReference": true
+    }
+  },
+  "actors": {},
+  "symbol": "script_4",
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "expression",
+          "value": "size==0"
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_GET_POSITION",
+            "args": {
+              "actorId": "$self$",
+              "vectorX": "V0",
+              "vectorY": "V0"
+            },
+            "id": "4d4ea02b-117b-44d5-9437-4ddfd4ac2b5c"
+          }
+        ],
+        "false": []
+      },
+      "id": "768a6512-59c6-41a5-9764-31cb9a3bfd3d"
+    }
+  ]
+}

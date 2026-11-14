@@ -1,0 +1,129 @@
+{
+  "_resourceType": "script",
+  "id": "44fff45e-a915-4eb9-915b-647ee134d64e",
+  "name": "enemies/turnip/Turnip Collisions",
+  "description": "Handle player jumping on turnips or being hurt",
+  "variables": {
+    "V0": {
+      "id": "V0",
+      "name": "Defeated",
+      "passByReference": true
+    },
+    "V1": {
+      "id": "V1",
+      "name": "Turnip Counter",
+      "passByReference": true
+    }
+  },
+  "actors": {
+    "0": {
+      "id": "0",
+      "name": "Turnip"
+    }
+  },
+  "symbol": "script_1",
+  "script": [
+    {
+      "id": "14f7ba2b-09bc-447d-b1a6-98f7158d4d27",
+      "command": "EVENT_IF_ACTOR_RELATIVE_TO_ACTOR",
+      "args": {
+        "actorId": "player",
+        "operation": "up",
+        "otherActorId": "0",
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "id": "4b1a2956-d1d9-4f93-b10d-f4523aed5a3f",
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "V0",
+              "value": {
+                "type": "true"
+              }
+            }
+          },
+          {
+            "id": "2ca57b07-ea85-41dd-9bfc-a652a9de7896",
+            "command": "EVENT_DEC_VALUE",
+            "args": {
+              "variable": "V1"
+            }
+          },
+          {
+            "id": "46cbf647-bf4c-48fd-8a3e-567406e22688",
+            "command": "EVENT_ACTOR_COLLISIONS_DISABLE",
+            "args": {
+              "actorId": "0"
+            }
+          },
+          {
+            "id": "20314466-c3e2-4a65-a5a4-0cfa695cc478",
+            "command": "EVENT_ACTOR_STOP_UPDATE",
+            "args": {
+              "actorId": "0"
+            }
+          },
+          {
+            "command": "EVENT_ACTOR_SET_STATE",
+            "args": {
+              "actorId": "0",
+              "spriteStateId": "Explode"
+            },
+            "id": "ec1ce7c0-aea7-4f42-bc29-5644147f4a91"
+          },
+          {
+            "id": "501ac4d7-0867-44c8-b415-52e62076f949",
+            "command": "EVENT_PLAYER_BOUNCE",
+            "args": {
+              "height": "low"
+            }
+          },
+          {
+            "id": "387f6f35-2144-4dd4-95df-41310e983c22",
+            "command": "EVENT_WAIT",
+            "args": {
+              "time": 0.5
+            }
+          },
+          {
+            "id": "30f44b00-90a7-445e-8e66-e91bca45aabc",
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "0"
+            }
+          }
+        ],
+        "false": [
+          {
+            "id": "06f55e6d-799c-4654-b389-6b6905860a95",
+            "command": "EVENT_ACTOR_SET_POSITION",
+            "args": {
+              "actorId": "player",
+              "x": {
+                "type": "number",
+                "value": 52
+              },
+              "y": {
+                "type": "number",
+                "value": 13
+              }
+            }
+          },
+          {
+            "id": "7927d137-4223-4d24-b816-aba207907710",
+            "command": "EVENT_CAMERA_SHAKE",
+            "args": {
+              "time": 0.5,
+              "magnitude": {
+                "type": "number",
+                "value": 5
+              }
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

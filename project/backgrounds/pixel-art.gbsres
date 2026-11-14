@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "9d98409c-461d-464a-9efc-e66b5c7e911a",
+  "name": "pixel-art",
+  "symbol": "bg_pixel_art",
+  "width": 44,
+  "height": 50,
+  "imageWidth": 355,
+  "imageHeight": 400,
+  "filename": "pixel-art.PNG",
+  "tileColors": "",
+  "autoColor": false
+}

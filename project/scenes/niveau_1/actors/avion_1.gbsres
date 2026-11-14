@@ -1,0 +1,165 @@
+{
+  "_resourceType": "actor",
+  "id": "d8011ccf-f2be-42aa-96dc-e3ebaab80730",
+  "name": "avion 1",
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "1ebdaa37-a6ce-42f0-b78e-1d0352916898",
+  "prefabId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "paletteId": "",
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "1",
+  "prefabScriptOverrides": {},
+  "symbol": "actor_7",
+  "script": [
+    {
+      "id": "6f6a90a8-11f1-432b-afcc-8b1c0fdc56c1",
+      "command": "EVENT_IF_ACTOR_RELATIVE_TO_ACTOR",
+      "args": {
+        "actorId": "player",
+        "operation": "up",
+        "otherActorId": "0",
+        "__collapseElse": false,
+        "__collapse": false
+      },
+      "children": {
+        "true": [
+          {
+            "id": "6f9742a8-3e73-4af9-8ea1-78bb43bcad4e",
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "L0",
+              "value": {
+                "type": "true"
+              }
+            }
+          },
+          {
+            "id": "b94346a2-ed94-4a1d-99a1-53713bd2c09d",
+            "command": "EVENT_DEC_VALUE",
+            "args": {
+              "variable": "12"
+            }
+          },
+          {
+            "id": "40a8d5aa-52c6-4af6-a641-7b123018c3d7",
+            "command": "EVENT_ACTOR_COLLISIONS_DISABLE",
+            "args": {
+              "actorId": "0"
+            }
+          },
+          {
+            "id": "af33ca79-4ab4-4b67-8f38-5d0d680ea265",
+            "command": "EVENT_ACTOR_STOP_UPDATE",
+            "args": {
+              "actorId": "0"
+            }
+          },
+          {
+            "command": "EVENT_ACTOR_SET_STATE",
+            "args": {
+              "actorId": "0",
+              "spriteStateId": "Explode"
+            },
+            "id": "fa6ce3ed-4fe4-4dcd-98e7-5b0b3bfd3bc6"
+          },
+          {
+            "id": "74b72b40-0c5b-46a0-ba7a-4917666f8bcf",
+            "command": "EVENT_PLAYER_BOUNCE",
+            "args": {
+              "height": "low"
+            }
+          },
+          {
+            "id": "b64032c5-f77a-4506-8132-f7f7ff761408",
+            "command": "EVENT_WAIT",
+            "args": {
+              "time": 0.5
+            }
+          },
+          {
+            "id": "c0077c44-acf8-4486-95c6-f1596ba215b6",
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "0"
+            }
+          },
+          {
+            "command": "EVENT_SOUND_PLAY_EFFECT",
+            "args": {
+              "type": "beep",
+              "priority": "medium",
+              "pitch": 4,
+              "frequency": 200,
+              "duration": 0.5,
+              "wait": true,
+              "effect": 0
+            },
+            "id": "1bf711f4-2b6b-4453-962c-1e77e7f5ae87"
+          }
+        ],
+        "false": [
+          {
+            "id": "9f8eaf22-62c9-4c04-8cee-f0c14333308c",
+            "command": "EVENT_ACTOR_SET_POSITION",
+            "args": {
+              "actorId": "player",
+              "x": {
+                "type": "number",
+                "value": 5
+              },
+              "y": {
+                "type": "number",
+                "value": 13
+              }
+            }
+          },
+          {
+            "id": "598e6d8d-afa0-49d6-b147-1983ae128728",
+            "command": "EVENT_CAMERA_SHAKE",
+            "args": {
+              "time": 0.5,
+              "magnitude": {
+                "type": "number",
+                "value": 5
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "startScript": [],
+  "updateScript": [
+    {
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "$self$",
+        "x": {
+          "type": "property",
+          "target": "player",
+          "property": "xpos"
+        },
+        "y": {
+          "type": "property",
+          "target": "$self$",
+          "property": "ypos"
+        },
+        "moveType": "horizontal",
+        "useCollisions": true,
+        "__collapse": false
+      },
+      "id": "3edca946-5f97-4ba5-9024-53167a523382"
+    }
+  ],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": [],
+  "x": 76,
+  "y": 10,
+  "_index": 7
+}

@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "305a0d8d-64a3-478d-b2ad-05df6d9bfeef",
+  "name": "KAIJU SIMULATOR 2",
+  "symbol": "bg_kaiju_simulator_2",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "filename": "KAIJU SIMULATOR 2.png",
+  "tileColors": "",
+  "autoColor": false
+}

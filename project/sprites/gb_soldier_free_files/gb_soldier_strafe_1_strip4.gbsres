@@ -1,0 +1,101 @@
+{
+  "_resourceType": "sprite",
+  "id": "794578c6-76db-4afb-ac06-90ac0cacde53",
+  "name": "GB Soldier Free Files/GB_Soldier_Strafe_1_strip4",
+  "symbol": "sprite_gb_soldier_free_file_19",
+  "numFrames": 4,
+  "filename": "GB Soldier Free Files/GB_Soldier_Strafe_1_strip4.png",
+  "checksum": "f22b3fbb398e234d5691e8e3619d04d896aee028",
+  "width": 64,
+  "height": 32,
+  "states": [
+    {
+      "id": "f11a1de4-9a2c-40fe-8487-19ea4b9e5f09",
+      "name": "",
+      "animationType": "multi_movement",
+      "flipLeft": true,
+      "animations": [
+        {
+          "id": "2aa3e5c6-92f6-4964-9307-f15bf721e512",
+          "frames": [
+            {
+              "id": "00117ec5-b103-4c83-a35d-ecc4fa2d28d2",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "d008d325-8260-4dfc-ab4d-80727da6b2c8",
+          "frames": [
+            {
+              "id": "3b0f2824-15ab-4c0e-a7af-aa53e658f148",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "4ba7183e-5697-4bbf-a9e6-f801637f861c",
+          "frames": [
+            {
+              "id": "fef7f012-a411-4cac-9bfd-c329ba81b0f5",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "d12e6366-1544-47b8-b512-18ac5981ff34",
+          "frames": [
+            {
+              "id": "29772e34-fc61-401f-a515-4f01f4c65a48",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "107a502c-c96a-40fb-947b-c92e28682c10",
+          "frames": [
+            {
+              "id": "73b32909-77ca-4d8d-9473-8115b8c69505",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "e461ff70-0acc-4b87-a273-831e4f08dabf",
+          "frames": [
+            {
+              "id": "61a2e72f-c7b6-4a21-a292-cee93e4bb9e6",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "bdbcd68d-1d52-46e6-bbd3-8fd7650c2c02",
+          "frames": [
+            {
+              "id": "c26380a3-e433-4678-9d48-6c35183a5a87",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "020b71bd-c53f-4701-880a-f9496b76b773",
+          "frames": [
+            {
+              "id": "2caed972-befa-46f7-a998-62a2be79d218",
+              "tiles": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "numTiles": 0,
+  "canvasWidth": 32,
+  "canvasHeight": 32,
+  "boundsX": 0,
+  "boundsY": 0,
+  "boundsWidth": 16,
+  "boundsHeight": 16,
+  "animSpeed": 15
+}

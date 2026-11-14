@@ -1,0 +1,155 @@
+{
+  "_resourceType": "actorPrefab",
+  "id": "5fa52cd0-57cd-414c-8b93-5601c6e9636f",
+  "name": "Enemies/Turnip",
+  "frame": 0,
+  "animate": true,
+  "spriteSheetId": "5dfcd63b-a5d6-4343-bc87-6bf44da43a77",
+  "moveSpeed": 0.5,
+  "animSpeed": 15,
+  "paletteId": "",
+  "persistent": false,
+  "collisionGroup": "1",
+  "_index": 0,
+  "script": [
+    {
+      "id": "d9db285d-917a-4ce2-8f36-a7aa9ca173f7",
+      "command": "EVENT_IF_ACTOR_RELATIVE_TO_ACTOR",
+      "args": {
+        "actorId": "player",
+        "operation": "up",
+        "otherActorId": "0",
+        "__collapseElse": false,
+        "__collapse": false
+      },
+      "children": {
+        "true": [
+          {
+            "id": "f9984241-03b5-4db5-94b7-187b85f7aea2",
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "L0",
+              "value": {
+                "type": "true"
+              }
+            }
+          },
+          {
+            "id": "5bcf336c-f46b-4f7e-a032-d92d0b9fea24",
+            "command": "EVENT_DEC_VALUE",
+            "args": {
+              "variable": "12"
+            }
+          },
+          {
+            "id": "283d8932-e15d-4c86-9527-9168ff15fe03",
+            "command": "EVENT_ACTOR_COLLISIONS_DISABLE",
+            "args": {
+              "actorId": "0"
+            }
+          },
+          {
+            "id": "99629f80-4b91-4b95-8cbd-0e42b23d6c82",
+            "command": "EVENT_ACTOR_STOP_UPDATE",
+            "args": {
+              "actorId": "0"
+            }
+          },
+          {
+            "command": "EVENT_ACTOR_SET_STATE",
+            "args": {
+              "actorId": "0",
+              "spriteStateId": "Explode"
+            },
+            "id": "dc35d1c3-ac09-4fa0-894f-7bfcd99874ff"
+          },
+          {
+            "id": "0aacf9d0-fd27-4593-8edc-8381787308d4",
+            "command": "EVENT_PLAYER_BOUNCE",
+            "args": {
+              "height": "low"
+            }
+          },
+          {
+            "id": "464f6f93-35ac-4abc-b6b5-2e4a043f3b78",
+            "command": "EVENT_WAIT",
+            "args": {
+              "time": 0.5
+            }
+          },
+          {
+            "id": "30a0f22b-2764-489b-acc1-c5dd01737353",
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "0"
+            }
+          },
+          {
+            "command": "EVENT_SOUND_PLAY_EFFECT",
+            "args": {
+              "type": "beep",
+              "priority": "medium",
+              "pitch": 4,
+              "frequency": 200,
+              "duration": 0.5,
+              "wait": true,
+              "effect": 0
+            },
+            "id": "29723e46-6de8-43cb-b25e-73a87d7b0278"
+          }
+        ],
+        "false": [
+          {
+            "id": "3a7a9954-8def-4e55-ae43-71b8fa4ccab3",
+            "command": "EVENT_ACTOR_SET_POSITION",
+            "args": {
+              "actorId": "player",
+              "x": {
+                "type": "number",
+                "value": 52
+              },
+              "y": {
+                "type": "number",
+                "value": 13
+              }
+            }
+          },
+          {
+            "id": "494f07f2-13e1-4581-aad8-db0d78cb072f",
+            "command": "EVENT_CAMERA_SHAKE",
+            "args": {
+              "time": 0.5,
+              "magnitude": {
+                "type": "number",
+                "value": 5
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "startScript": [],
+  "updateScript": [
+    {
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "$self$",
+        "x": {
+          "type": "number",
+          "value": 0
+        },
+        "y": {
+          "type": "number",
+          "value": 0
+        },
+        "moveType": "horizontal",
+        "useCollisions": false
+      },
+      "id": "c9a88098-ae16-4328-a30c-8c478c23f3bb"
+    }
+  ],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

@@ -1,0 +1,101 @@
+{
+  "_resourceType": "sprite",
+  "id": "6748fd2c-1b75-4e39-be00-65a672a0ab56",
+  "name": "GB Soldier Free Files/GB_Soldier_Punch_1",
+  "symbol": "sprite_gb_soldier_free_file_15",
+  "numFrames": 1.5,
+  "filename": "GB Soldier Free Files/GB_Soldier_Punch_1.png",
+  "checksum": "f167256c513c21babc2cd9d1b70a01324a8c6f24",
+  "width": 24,
+  "height": 32,
+  "states": [
+    {
+      "id": "a77728d3-97a6-41d6-8f18-8cb194529596",
+      "name": "",
+      "animationType": "multi_movement",
+      "flipLeft": true,
+      "animations": [
+        {
+          "id": "7b98faa3-8475-4eff-a007-345b26a4c65b",
+          "frames": [
+            {
+              "id": "457fda3a-3b6e-4841-bcda-956426caeec5",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "9c1c4e4d-2180-47ce-bb9f-8e039ab3d4cb",
+          "frames": [
+            {
+              "id": "b896db80-9bc0-4086-92c0-5ad0c96255f6",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "1d3c21f3-0088-49ab-a078-2d3e334afd13",
+          "frames": [
+            {
+              "id": "a503f04a-6dc3-45dc-a765-20f6a87441c2",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "c08987ea-23be-4d94-92db-e9e5d3bdf5cf",
+          "frames": [
+            {
+              "id": "02ad2580-e6e8-4344-997f-4b95666ac190",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "900db38c-4256-43e8-8f92-ccc58e0d7cd4",
+          "frames": [
+            {
+              "id": "aab190a4-4652-4a35-b3cb-45260574c0a6",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "0c5e80db-7317-45c0-9492-5a518728b998",
+          "frames": [
+            {
+              "id": "4705657a-2120-4887-b38c-fc4f41ff3630",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "20118692-3255-4c37-8096-11c9b14d103a",
+          "frames": [
+            {
+              "id": "dffda106-534e-4042-8905-521088c24686",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "1e04db97-ede7-4580-adef-8602f4db5933",
+          "frames": [
+            {
+              "id": "1ed9fd61-b8cd-4cfa-827d-c6f5d1aea4d9",
+              "tiles": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "numTiles": 0,
+  "canvasWidth": 32,
+  "canvasHeight": 32,
+  "boundsX": 0,
+  "boundsY": 0,
+  "boundsWidth": 16,
+  "boundsHeight": 16,
+  "animSpeed": 15
+}

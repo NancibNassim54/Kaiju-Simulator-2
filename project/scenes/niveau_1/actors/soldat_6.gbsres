@@ -1,0 +1,91 @@
+{
+  "_resourceType": "actor",
+  "id": "8eda1121-2396-4e60-af52-7c8b4af45f62",
+  "name": "soldat 6",
+  "frame": 0,
+  "animate": true,
+  "spriteSheetId": "f88eea80-c5b4-4e10-b49f-7a8aa8bd477e",
+  "prefabId": "5fa52cd0-57cd-414c-8b93-5601c6e9636f",
+  "direction": "down",
+  "moveSpeed": 0.5,
+  "animSpeed": 15,
+  "paletteId": "",
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "1",
+  "prefabScriptOverrides": {
+    "3a7a9954-8def-4e55-ae43-71b8fa4ccab3": {
+      "id": "3a7a9954-8def-4e55-ae43-71b8fa4ccab3",
+      "args": {
+        "x": {
+          "type": "number",
+          "value": 5
+        }
+      }
+    },
+    "29723e46-6de8-43cb-b25e-73a87d7b0278": {
+      "id": "29723e46-6de8-43cb-b25e-73a87d7b0278",
+      "args": {
+        "type": "crash"
+      }
+    }
+  },
+  "_index": 5,
+  "symbol": "actor_5",
+  "x": 101,
+  "y": 13,
+  "script": [
+    {
+      "id": "d3f81824-a453-42b7-bac5-fbd1185de39a",
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "44fff45e-a915-4eb9-915b-647ee134d64e",
+        "__name": "Turnip Collisions",
+        "$variable[V0]$": {
+          "type": "variable",
+          "value": "L0"
+        },
+        "$variable[V1]$": {
+          "type": "variable",
+          "value": "12"
+        }
+      },
+      "children": {
+        "script": []
+      }
+    }
+  ],
+  "startScript": [
+    {
+      "id": "043d0776-43e0-4ceb-82fb-1119f721fb6d",
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "275fa6d7-1cb5-49ec-8e45-a5164f25ff7a",
+        "__name": "Turnip Init",
+        "$variable[V1]$": {
+          "type": "variable",
+          "value": "L0"
+        }
+      },
+      "children": {
+        "script": []
+      }
+    }
+  ],
+  "updateScript": [
+    {
+      "id": "d908bf7d-22df-42ab-a277-93d4283c66a4",
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "44d1efc4-28a2-423f-8571-5911c45c8c0b",
+        "__name": "Turnip Movement"
+      },
+      "children": {
+        "script": []
+      }
+    }
+  ],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

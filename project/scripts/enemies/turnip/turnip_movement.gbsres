@@ -1,0 +1,73 @@
+{
+  "_resourceType": "script",
+  "id": "44d1efc4-28a2-423f-8571-5911c45c8c0b",
+  "name": "enemies/turnip/Turnip Movement",
+  "description": "Move Turnip towards player",
+  "variables": {},
+  "actors": {
+    "0": {
+      "id": "0",
+      "name": "Turnip"
+    }
+  },
+  "symbol": "script_3",
+  "script": [
+    {
+      "id": "779b374a-3071-46ff-9dda-e048c706c523",
+      "command": "EVENT_IF_ACTOR_RELATIVE_TO_ACTOR",
+      "args": {
+        "actorId": "player",
+        "operation": "left",
+        "otherActorId": "0",
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "id": "ee8e7483-b73b-4082-a2f4-d8480b817156",
+            "command": "EVENT_ACTOR_MOVE_RELATIVE",
+            "args": {
+              "actorId": "0",
+              "x": {
+                "type": "number",
+                "value": -4
+              },
+              "y": {
+                "type": "number",
+                "value": 0
+              },
+              "moveType": "horizontal",
+              "useCollisions": true
+            }
+          }
+        ],
+        "false": [
+          {
+            "id": "87ff5f33-2cb0-42cc-9770-061077b478f1",
+            "command": "EVENT_ACTOR_MOVE_RELATIVE",
+            "args": {
+              "actorId": "0",
+              "x": {
+                "type": "number",
+                "value": 4
+              },
+              "y": {
+                "type": "number",
+                "value": 0
+              },
+              "moveType": "horizontal",
+              "useCollisions": true
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "7cc087f0-f378-4535-866f-1a4aa34394ab",
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 1
+      }
+    }
+  ]
+}

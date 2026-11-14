@@ -1,0 +1,45 @@
+{
+  "_resourceType": "scene",
+  "id": "3bcfbdb6-a357-439a-bb74-32d00f9b220a",
+  "_index": 0,
+  "name": "Niveau 1",
+  "backgroundId": "df3b8d8a-f4a9-4cdb-8549-ad286ef037d0",
+  "tilesetId": "",
+  "width": 120,
+  "height": 18,
+  "type": "PLATFORM",
+  "paletteIds": [
+    "",
+    "default-bg-4",
+    "default-bg-3"
+  ],
+  "spritePaletteIds": [],
+  "collisions": "00690+0f78+00168+",
+  "autoFadeSpeed": 1,
+  "symbol": "scene_1",
+  "x": 144,
+  "y": 266,
+  "script": [
+    {
+      "command": "EVENT_MUSIC_PLAY",
+      "args": {
+        "musicId": "88f28137-de04-479f-bbf0-7c6f9238dce2"
+      },
+      "id": "371726dd-7e73-496c-950f-c9cb0dd28132"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "parallax": [
+    {
+      "height": 10,
+      "speed": 3
+    },
+    {
+      "height": 0,
+      "speed": 0
+    }
+  ],
+  "playerSpriteSheetId": "62e7ab97-3dfb-438e-9d5d-7dfa06edd73f"
+}

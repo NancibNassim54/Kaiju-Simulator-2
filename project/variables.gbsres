@@ -1,0 +1,60 @@
+{
+  "_resourceType": "variables",
+  "variables": [
+    {
+      "id": "0",
+      "name": "size",
+      "symbol": "var_size"
+    },
+    {
+      "id": "dfb3d3fe-47a7-477b-a343-587fe9129a8f__L0",
+      "name": "Defeated",
+      "symbol": "var_defeated"
+    },
+    {
+      "id": "c73c6337-e3b1-4c41-a155-dae53492114b__L0",
+      "name": "Defeated",
+      "symbol": "var_defeated_0"
+    },
+    {
+      "id": "1b2fd131-d9f1-437e-aee4-644d0e4eedd6__L0",
+      "name": "Defeated",
+      "symbol": "var_defeated_1"
+    },
+    {
+      "id": "a2b76aa5-5c72-4249-8374-1d100e014ae4__L0",
+      "name": "Defeated",
+      "symbol": "var_defeated_2"
+    },
+    {
+      "id": "3860bbd8-cbdf-40c6-9fea-e44c3d2ed3bf__L0",
+      "name": "Defeated",
+      "symbol": "var_defeated_3"
+    },
+    {
+      "id": "8eda1121-2396-4e60-af52-7c8b4af45f62__L0",
+      "name": "Defeated",
+      "symbol": "var_defeated_4"
+    },
+    {
+      "id": "e6770b0e-531d-45e6-b991-28c90e8b2f84__L0",
+      "name": "Menu Choice",
+      "symbol": "var_menu_choice"
+    },
+    {
+      "id": "5c180b54-4c09-4edf-ade4-9540a66ffd8f__L0",
+      "name": "Defeated",
+      "symbol": "var_defeated_5"
+    },
+    {
+      "id": "b3b0b500-37a9-49c7-996f-3a26d33d0c9a__L0",
+      "name": "Defeated",
+      "symbol": "var_defeated_6"
+    },
+    {
+      "id": "062892ec-efec-446d-b4e7-a45b64dbc4ff__L0",
+      "name": "Defeated",
+      "symbol": "var_defeated_7"
+    }
+  ]
+}

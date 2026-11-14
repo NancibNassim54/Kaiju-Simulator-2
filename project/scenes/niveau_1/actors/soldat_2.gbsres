@@ -1,0 +1,107 @@
+{
+  "_resourceType": "actor",
+  "id": "c73c6337-e3b1-4c41-a155-dae53492114b",
+  "name": "soldat 2",
+  "frame": 0,
+  "animate": true,
+  "spriteSheetId": "f88eea80-c5b4-4e10-b49f-7a8aa8bd477e",
+  "prefabId": "5fa52cd0-57cd-414c-8b93-5601c6e9636f",
+  "direction": "down",
+  "moveSpeed": 0.5,
+  "animSpeed": 15,
+  "paletteId": "",
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "1",
+  "prefabScriptOverrides": {
+    "c9a88098-ae16-4328-a30c-8c478c23f3bb": {
+      "id": "c9a88098-ae16-4328-a30c-8c478c23f3bb",
+      "args": {
+        "x": {
+          "type": "property",
+          "target": "player",
+          "property": "xpos"
+        },
+        "y": {
+          "type": "property",
+          "target": "$self$",
+          "property": "ypos"
+        },
+        "useCollisions": true
+      }
+    },
+    "3a7a9954-8def-4e55-ae43-71b8fa4ccab3": {
+      "id": "3a7a9954-8def-4e55-ae43-71b8fa4ccab3",
+      "args": {
+        "x": {
+          "type": "number",
+          "value": 5
+        }
+      }
+    },
+    "29723e46-6de8-43cb-b25e-73a87d7b0278": {
+      "id": "29723e46-6de8-43cb-b25e-73a87d7b0278",
+      "args": {
+        "type": "crash"
+      }
+    }
+  },
+  "_index": 1,
+  "symbol": "actor_1",
+  "x": 42,
+  "y": 13,
+  "script": [
+    {
+      "id": "5d58c88c-3063-49ee-90bf-0f8f0a59f147",
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "44fff45e-a915-4eb9-915b-647ee134d64e",
+        "__name": "Turnip Collisions",
+        "$variable[V0]$": {
+          "type": "variable",
+          "value": "L0"
+        },
+        "$variable[V1]$": {
+          "type": "variable",
+          "value": "12"
+        }
+      },
+      "children": {
+        "script": []
+      }
+    }
+  ],
+  "startScript": [
+    {
+      "id": "19ae4c86-fcd7-4449-a6c3-8335531f32c4",
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "275fa6d7-1cb5-49ec-8e45-a5164f25ff7a",
+        "__name": "Turnip Init",
+        "$variable[V1]$": {
+          "type": "variable",
+          "value": "L0"
+        }
+      },
+      "children": {
+        "script": []
+      }
+    }
+  ],
+  "updateScript": [
+    {
+      "id": "c6a97d4f-7096-438a-896a-4ff1cadcd3e6",
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "44d1efc4-28a2-423f-8571-5911c45c8c0b",
+        "__name": "Turnip Movement"
+      },
+      "children": {
+        "script": []
+      }
+    }
+  ],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

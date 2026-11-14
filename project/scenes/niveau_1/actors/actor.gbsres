@@ -1,0 +1,54 @@
+{
+  "_resourceType": "actor",
+  "id": "feb748a4-3fc7-4523-b2dd-4237bc3bdc03",
+  "name": "",
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "73306070-3b0f-4669-b977-86952f3418ae",
+  "prefabId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "paletteId": "",
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "symbol": "actor_14",
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Félicitations!\nTu as terminé le\npremier niveau ...",
+          "Tu passes au\nniveau 2 !"
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "592a1424-1739-4186-9690-6816c1f470b9"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": [],
+  "x": 111,
+  "y": 13,
+  "_index": 8
+}
