@@ -3,7 +3,6 @@
 > **2nd Place Winner 🥈** at the IDMC Nancy Game Jam 2026 (organized with the EKOS association). 
 > Developed from scratch in just **48 hours**!
 
-![Game Banner / Screenshot Placeholder](path/to/screenshot.png)
 
 ## 🎮 About the Game
 **Kaiju Simulator 2** is an action-packed platformer where you step into the shoes of a colossal Kaiju. Instead of saving the city, your sole objective is absolute destruction: smash skyscrapers, crush obstacles, and wreak havoc across the urban landscape while managing your rampage!
